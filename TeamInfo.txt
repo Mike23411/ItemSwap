@@ -1,0 +1,15 @@
+DatabaseController.java 
+  Implemented SQL queries in the code
+  location: cs6400-2022-01-Team102/Phase_3/GameSwap/src/main/java/com/example/gameswap/
+  
+dump.sql: 
+  generate schema and load demo data
+  location: root
+
+GameSwap.sql: 
+  generate schema only
+  location: root
+
+data_loader.ipynb
+  load demo data into db
+  location: cs6400-2022-01-Team102/Phase_3/Demo Data/

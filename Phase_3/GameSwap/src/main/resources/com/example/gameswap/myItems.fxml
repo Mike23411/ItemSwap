@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gameswap.MyItemsController">
+   <children>
+      <Label layoutX="15.0" layoutY="14.0" text="Items counts" />
+      <Label layoutX="14.0" layoutY="198.0" text="My Items" />
+      <TableView fx:id="MyItemsCounts" layoutX="14.0" layoutY="31.0" prefHeight="150.0" prefWidth="231.0" />
+      <TableView fx:id="MyItemsDetails" layoutX="15.0" layoutY="228.0" prefHeight="323.0" prefWidth="907.0" />
+      <Button fx:id="newListReturnButton" layoutX="800.0" layoutY="562.0" mnemonicParsing="false" onAction="#MyItemsReturnHomeOnAction" text="return to main" />
+   </children>
+</Pane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="346.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gameswap.HomeController">
+   <children>
+      <Label layoutX="26.0" layoutY="28.0" text="GameSwap">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton" layoutX="245.0" layoutY="29.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" text="logout" />
+      <Label fx:id="welcomeLabel" layoutX="28.0" layoutY="84.0" text="Welcome, name here" />
+      <Button fx:id="listItemButton" layoutX="195.0" layoutY="89.0" mnemonicParsing="false" onAction="#listItemButtonOnAction" text="List Item" />
+      <Button fx:id="swapHistoryButton" layoutX="195.0" layoutY="220.0" mnemonicParsing="false" onAction="#swapHistoryButtonOnAction" text="Swap History" />
+      <Button fx:id="searchItemButton" layoutX="195.0" layoutY="175.0" mnemonicParsing="false" onAction="#searchItemsButtonOnAction" text="Search Items" />
+      <Button fx:id="myItemsButton" layoutX="193.0" layoutY="130.0" mnemonicParsing="false" onAction="#myItemsButtonOnAction" text="My Items" />
+      <Button fx:id="updateInfoButton" layoutX="194.0" layoutY="265.0" mnemonicParsing="false" onAction="#updateButtonOnAction" text="Update My Info" />
+      <Label fx:id="ratingLabel" layoutX="29.0" layoutY="142.0" text="None" />
+      <Label layoutX="27.0" layoutY="121.0" text="My Rating:" />
+      <Label layoutX="27.0" layoutY="183.0" text="Unaccepted Swaps" />
+      <Label layoutX="27.0" layoutY="241.0" text="Unrated Swaps" />
+      <Hyperlink fx:id="acceptRejectSwapsLink" layoutX="29.0" layoutY="201.0" onAction="#acceptRejectSwapsOnAction" />
+      <Hyperlink fx:id="rateSwapsLink" layoutX="29.0" layoutY="254.0" onAction="#rateSwapsLinkOnAction" />
+   </children>
+</AnchorPane>

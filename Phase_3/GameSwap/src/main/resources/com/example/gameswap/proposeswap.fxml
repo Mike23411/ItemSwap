@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gameswap.ProposeSwapController">
+   <children>
+      <Label fx:id="distanceLabel" layoutX="192.0" layoutY="29.0" prefHeight="17.0" prefWidth="308.0" text="The  other user is X miles away" textAlignment="CENTER" />
+      <Label layoutX="25.0" layoutY="117.0" text="Please choose your proposed item:" />
+      <TableView fx:id="proposedItemTable" layoutX="25.0" layoutY="149.0" prefHeight="180.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="itemNumberColumn" prefWidth="75.0" text="Item #" />
+          <TableColumn fx:id="gameTypeColumn" prefWidth="120.0" text="Game Type" />
+            <TableColumn fx:id="nameColumn" prefWidth="286.0" text="Title" />
+            <TableColumn fx:id="conditionColumn" prefWidth="124.0" text="Condition" />
+        </columns>
+      </TableView>
+      <Button fx:id="backToMainMenuButton" layoutX="484.0" layoutY="345.0" mnemonicParsing="false" onAction="#backToMainMenuButtonOnAction" text="return to main" />
+      <Button fx:id="confirmationButton" layoutX="454.0" layoutY="83.0" mnemonicParsing="false" onAction="#confirmationButtonOnAction" prefHeight="35.0" prefWidth="122.0" text="Confirm" />
+      <Label layoutX="25.0" layoutY="68.0" text="You are proposing a trade for :" />
+      <Label fx:id="itemNameLabel" layoutX="25.0" layoutY="92.0" text="item name here" />
+   </children>
+</Pane>
